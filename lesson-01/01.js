@@ -3,3 +3,11 @@
 
 // your code
 let sum = 210;
+
+const number = 0
+const plus = 1;
+while ( sum <=20){
+    number += plus;
+    plus ++;
+}
+console.log(number)
