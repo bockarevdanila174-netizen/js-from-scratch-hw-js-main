@@ -5,11 +5,10 @@
  */
 
 const score = 70 // тестовое значение, можно изменять
-let grade =  ;
+let grade;
 
-if(score <= 0){
 
-} else if(score >= 0 && score <= 49){
+if(score >= 0 && score <= 49){
     grade = 'F'
 
 }else if(score <= 69){
