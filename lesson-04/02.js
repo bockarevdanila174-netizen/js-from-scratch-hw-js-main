@@ -19,7 +19,7 @@
 function findUniqueElements(arr) {
     let newArr = []
     for(let i = 0; i < arr.length;i++){
-        if(includesElement(newArr,arr[i]) === false){
+        if(!includesElement(newArr,arr[i])){
             newArr.push(arr[i])
         }
     }
