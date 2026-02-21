@@ -26,4 +26,3 @@ function includesElement(arr,elm) {
 console.log(includesElement([1,2,3],1))
 console.log(includesElement([1,2,3],4))
 
-export default includesElement;
