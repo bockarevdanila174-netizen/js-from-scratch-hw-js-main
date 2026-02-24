@@ -17,21 +17,16 @@ const game = {
   },
   addResource(resource,amount){
   if( !(resource in game.resources)){
-    throw new Error("Invalid resource")
+    console.log("Invalid resource")
+    return;
   }
-  return game.resources[resource] += amount;
+   game.resources[resource] += amount;
   
 }
 }
 game.addResource("silver",50)
+console.log(game.resources)
+
 game.addResource("gold",150)
 console.log(game.resources)
 
-// function  addResource(resource,amount){
-//   if( resource in game ){
-//     return  "Invalid resource"
-//   }
-//   return game[resource] = amount
-// }
-// console.log(addResource())
-// console.log(game)
