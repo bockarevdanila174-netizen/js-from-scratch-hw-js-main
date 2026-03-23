@@ -20,7 +20,7 @@ const WEB_TECH_IMAGES = [
 
 
 
-const img = document.querySelector("#web-tech-image")
+const img = document.getElementById("web-tech-image")
 const prevButton = document.getElementById("prev-button");
 const nextButton = document.getElementById("next-button");
 
@@ -35,8 +35,8 @@ prevButton.addEventListener("click", function(){
 
 currentIndex--;
   if(currentIndex < 0) currentIndex = WEB_TECH_IMAGES.length - 1
-  showImage()
-})
+  showImage();
+});
 
 nextButton.addEventListener("click", function() {
   currentIndex++; 
