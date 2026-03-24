@@ -10,5 +10,7 @@
 */
 
 function truncate(str, maxLength) {
+  return(str.length > maxLength) ? str.slice(0, maxLength) + "..." : str;
   // your code
 }
+console.log(truncate("Если длина строки", 25) )
